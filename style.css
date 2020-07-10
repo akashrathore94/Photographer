@@ -1,0 +1,44 @@
+/*****GLOBAL STYLES*****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 50%;
+  --header1: 
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 4.6rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
