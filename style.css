@@ -1,5 +1,4 @@
 /*****GLOBAL STYLES*****/
-
 * {
   margin: 0;
   padding: 0;
@@ -72,4 +71,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+body {
+  font-family: "Ruhl", sans-serif;
+}
+
+h1 {
+  font-family: "Vibes", sans-serif;
 }
