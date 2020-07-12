@@ -126,17 +126,20 @@ nav {
 }
 
 .hero-intro p {
-  padding: 4rem 6rem;
+  padding: 0rem 6rem;
+  margin-bottom: 7rem;
+  color: var(--gray-text);
 }
 
 .hero-intro a {
-  padding: 2rem 8rem;
+  padding: 1.5rem 6rem;
   border: 3px solid black;
-  margin: 4rem;
+  margin-bottom: 4rem;
 }
 
 .hero-intro h2 {
-  padding: 3rem;
+  padding-top: 4rem;
+  margin-bottom: 7rem;
 }
 
 .hero-images {
@@ -207,7 +210,7 @@ nav {
     width: 100%;
   }
   .hero-intro p {
-    padding: 5rem 3rem;
+    padding: 0rem 3rem;
   }
 
   /***BURGER ANIMATION****/
