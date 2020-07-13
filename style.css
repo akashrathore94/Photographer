@@ -27,7 +27,7 @@ html {
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
   --text: calc(1.5rem + 1vw);
-  --big: calc(2rem + 1vw);
+  --big: calc(6rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
@@ -98,7 +98,7 @@ nav {
   display: flex;
   align-items: center;
   min-height: 10vh;
-  padding: 1rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 #logo {
@@ -124,8 +124,7 @@ nav {
 }
 
 .hero-intro p {
-  padding-right: 6rem;
-  padding-left: 6rem;
+  padding: 0rem 6rem;
   margin-bottom: 7rem;
   color: var(--gray-text);
 }
@@ -133,12 +132,12 @@ nav {
 .hero-intro a {
   padding: 0.8em 2.5em;
   border: 3px solid black;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .hero-intro h2 {
-  padding-top: 4rem;
-  margin-bottom: 6rem;
+  padding-top: 6rem;
+  margin-bottom: 7rem;
 }
 
 .hero-images {
@@ -265,7 +264,6 @@ nav {
 #gallery {
   display: grid;
   min-height: 100vh;
-  width: 100%;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
 }
@@ -298,6 +296,49 @@ nav {
 
 .gallery-head h2 {
   margin-bottom: 1rem;
+}
+
+/******************CONTACT*****************/
+
+#contact {
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form-wrapper {
+  flex: 3 1 40rem;
+}
+
+.form-wrapper span {
+  font-size: var(--big);
+  color: var(--special-color);
+}
+
+.form-wrapper label {
+  display: block;
+}
+
+.form-wrapper input {
+  display: block;
+  margin: 3rem 0rem;
+  background: var(--background-color);
+  color: white;
+  padding: 1rem;
+  border: none;
+}
+
+.form-wrapper button {
+  padding: 1rem 8rem;
+  background: var(--special-color);
+  color: white;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact-img {
+  flex: 1 1 40rem;
 }
 
 /***********************MEDIA QUERIES***********************/
