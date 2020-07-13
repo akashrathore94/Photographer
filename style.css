@@ -302,12 +302,17 @@ nav {
 
 #contact {
   min-height: 90vh;
-  display: flex;
-  flex-wrap: wrap;
+  background: url(img/contact-image.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
 .form-wrapper {
-  flex: 3 1 40rem;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
 }
 
 .form-wrapper span {
@@ -326,6 +331,7 @@ nav {
   color: white;
   padding: 1rem;
   border: none;
+  outline: none;
 }
 
 .form-wrapper button {
@@ -337,8 +343,26 @@ nav {
   cursor: pointer;
 }
 
-.contact-img {
+/********************FOOTER********************************/
+footer {
+  background: var(--background-color);
+  color: white;
+  display: flex;
+  padding: 1.5rem 5%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  display: flex;
   flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer h4 {
+  flex: 3 1 40rem;
+  font-size: calc(1.4rem + 1vw);
 }
 
 /***********************MEDIA QUERIES***********************/
@@ -428,5 +452,15 @@ nav {
 
   .gallery-head {
     display: none;
+  }
+
+  /************CONTACT***********/
+  #contact {
+    min-height: 90vh;
+    background: none;
+  }
+  .form-wrapper {
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
