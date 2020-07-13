@@ -261,6 +261,16 @@ nav {
   object-fit: cover;
 }
 
+/***********************GALLERY****************************/
+#gallery {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/***********************MEDIA QUERIES***********************/
+
 @media screen and (max-width: 842px) {
   .hero {
     width: 100%;
@@ -269,7 +279,7 @@ nav {
     padding: 0rem 3rem;
   }
 
-  /***BURGER ANIMATION****/
+  /**********************BURGER ANIMATION****************/
   .burger {
     position: relative;
     display: block;
