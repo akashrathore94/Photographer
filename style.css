@@ -29,6 +29,7 @@ html {
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
+  --foot: calc(0.9rem + 1vw);
 }
 
 h1 {
@@ -365,13 +366,13 @@ footer ul {
 
 footer h4 {
   flex: 3 1 50rem;
-  font-size: calc(0.8rem + 1vw);
+  font-size: var(--foot);
   text-align: center;
   padding-bottom: 1rem;
 }
 
 footer span {
-  font-size: calc(1.4rem + 1vw);
+  font-size: var(--text);
   text-decoration: underline;
 }
 
@@ -479,5 +480,6 @@ footer span {
     --header4: 3rem;
     --text: 3rem;
     --big: 8rem;
+    --foot: 1.3rem;
   }
 }
