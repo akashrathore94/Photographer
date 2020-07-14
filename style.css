@@ -7,17 +7,15 @@
 
 @font-face {
   font-family: "Ruhl";
-  src: url(fonts/FrankRuhlLibre-Regular.ttf);
+  src: url("/fonts/FrankRuhlLibre-Regular.ttf");
 }
-
 @font-face {
   font-family: "Ruhl Medium";
-  src: url(fonts/FrankRuhlLibre-Medium.ttf);
+  src: url("/fonts/FrankRuhlLibre-Medium.ttf");
 }
-
 @font-face {
   font-family: "Vibes";
-  src: url(fonts/GreatVibes-Regular.ttf);
+  src: url("/fonts/GreatVibes-Regular.ttf");
 }
 
 html {
@@ -98,7 +96,7 @@ nav {
   display: flex;
   align-items: center;
   min-height: 10vh;
-  padding: 1.5rem 0rem;
+  padding: 2rem 0rem;
 }
 
 #logo {
@@ -302,17 +300,21 @@ nav {
 
 #contact {
   min-height: 90vh;
-  background: url(img/contact-image.jpg);
-  background-position: right bottom;
-  background-repeat: no-repeat;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .form-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  transform: translate(-20%, -50%);
+  flex: 2 1 40rem;
+}
+
+.form-wrapper h2 {
+  margin: 5rem 0rem;
+}
+
+#contact img {
+  flex: 1 1 40rem;
+  max-width: 50%;
 }
 
 .form-wrapper span {
@@ -341,6 +343,7 @@ nav {
   border: none;
   width: 100%;
   cursor: pointer;
+  margin-bottom: 5rem;
 }
 
 /********************FOOTER********************************/
@@ -455,12 +458,30 @@ footer h4 {
   }
 
   /************CONTACT***********/
-  #contact {
-    min-height: 90vh;
-    background: none;
+
+  #contact img {
+    display: none;
   }
-  .form-wrapper {
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+  /******FOOTER*******/
+  footer ul {
+    order: 1;
+  }
+
+  footer h4 {
+    order: 2;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+  html {
+    --header1: 3rem;
+    --header2: 5rem;
+    --header3: 4rem;
+    --header4: 3rem;
+    --text: 3rem;
+    --big: 8rem;
   }
 }
