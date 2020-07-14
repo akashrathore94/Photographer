@@ -317,7 +317,7 @@ nav {
 
 #contact img {
   flex: 1 1 40rem;
-  max-width: 50%;
+  max-width: 40%;
 }
 
 .form-wrapper span {
@@ -365,13 +365,13 @@ footer ul {
   flex: 1 1 40rem;
   justify-content: space-around;
   align-items: center;
+  padding-top: 1rem;
 }
 
 footer h4 {
   flex: 3 1 50rem;
   font-size: var(--foot);
   text-align: center;
-  padding-bottom: 1rem;
 }
 
 footer span {
