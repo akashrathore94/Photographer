@@ -15,7 +15,7 @@
 }
 @font-face {
   font-family: "Vibes";
-  src: url("/fonts/GreatVibes-Regular.ttf");
+  src: url("fonts/GreatVibes-Regular.ttf");
 }
 
 html {
@@ -24,12 +24,13 @@ html {
   --header2: calc(3.5rem + 1vw);
   --header3: calc(3rem + 1vw);
   --header4: calc(2.4rem + 1vw);
-  --text: calc(1.5rem + 1vw);
+  --text: calc(1.3rem + 1vw);
   --big: calc(6rem + 1vw);
   --special-color: #906272;
   --background-color: #414141;
   --gray-text: #525252;
   --foot: calc(0.9rem + 1vw);
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -87,8 +88,10 @@ h1 {
 
 .main-head {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-  position: relative;
+  z-index: 12;
+  position: sticky;
+  top: 0;
+  background: white;
 }
 
 nav {
@@ -97,7 +100,7 @@ nav {
   display: flex;
   align-items: center;
   min-height: 10vh;
-  padding: 2rem 0rem;
+  padding: 1rem 0rem;
 }
 
 #logo {
@@ -198,8 +201,7 @@ nav {
   }
 }
 
-.burger,
-.menu-check {
+.burger {
   display: none;
 }
 
@@ -300,7 +302,7 @@ nav {
 /******************CONTACT*****************/
 
 #contact {
-  min-height: 90vh;
+  min-height: 88vh;
   display: flex;
   flex-wrap: wrap;
 }
@@ -352,9 +354,10 @@ footer {
   background: var(--background-color);
   color: white;
   display: flex;
-  padding: 2rem 5%;
+  padding: 1rem 5%;
   align-items: center;
   flex-wrap: wrap;
+  min-height: 12vh;
 }
 
 footer ul {
@@ -390,6 +393,7 @@ footer span {
   .burger {
     position: relative;
     display: block;
+    cursor: pointer;
   }
   .burger span {
     padding: 0.2rem 2rem;
@@ -414,33 +418,21 @@ footer span {
     align-items: center;
     transition: transform 1s ease;
   }
-  .menu-check {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translate(5%, -50%);
-    width: 5rem;
-    height: 5rem;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 100;
-    display: block;
-  }
-  .menu-check:checked + .nav-links {
+
+  .nav-open {
     transform: translateX(-100%);
   }
 
-  .menu-check:checked ~ .burger span {
+  .toggle .line1 {
+    transform: rotateZ(45deg) translateY(300%);
     background: white;
   }
-  .menu-check:checked ~ .burger span:nth-child(1) {
-    transform: rotateZ(45deg) translateY(300%);
-  }
-  .menu-check:checked ~ .burger span:nth-child(2) {
+  .toggle .line2 {
     opacity: 0;
   }
-  .menu-check:checked ~ .burger span:nth-child(3) {
+  .toggle .line3 {
     transform: rotateZ(-45deg) translateY(-300%);
+    background: white;
   }
 
   /***ABOUT SECTION****/
