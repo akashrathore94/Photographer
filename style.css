@@ -351,7 +351,7 @@ footer {
   background: var(--background-color);
   color: white;
   display: flex;
-  padding: 1.5rem 5%;
+  padding: 2rem 5%;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -359,13 +359,20 @@ footer {
 footer ul {
   display: flex;
   flex: 1 1 40rem;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
 footer h4 {
-  flex: 3 1 40rem;
+  flex: 3 1 50rem;
+  font-size: calc(0.8rem + 1vw);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+footer span {
   font-size: calc(1.4rem + 1vw);
+  text-decoration: underline;
 }
 
 /***********************MEDIA QUERIES***********************/
@@ -461,17 +468,6 @@ footer h4 {
 
   #contact img {
     display: none;
-  }
-
-  /******FOOTER*******/
-  footer ul {
-    order: 1;
-  }
-
-  footer h4 {
-    order: 2;
-    text-align: center;
-    padding-top: 1rem;
   }
 }
 
